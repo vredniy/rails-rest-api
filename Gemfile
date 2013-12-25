@@ -32,12 +32,21 @@ gem 'jbuilder', '~> 1.2'
 gem 'sdoc',          group: :doc, require: false
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/jonleighton/spring
-gem 'spring',        group: :development
 
 gem 'slim-rails'
 
+group :development do
+  gem 'pry-rails'
+
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'quiet_assets'
+  gem 'spring'
+end
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'faker'
 end
 
 # Use ActiveModel has_secure_password
