@@ -35,6 +35,8 @@ gem 'sdoc',          group: :doc, require: false
 
 gem 'slim-rails'
 
+gem 'thin'
+
 group :development do
   gem 'pry-rails'
 
@@ -48,16 +50,3 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
   gem 'faker'
 end
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
-
